@@ -6,5 +6,6 @@ This is a solution for post-fixes on scales and feather IPs based on a simple ma
 
 Original scales with IPs:
 ![Scales with IPs](https://github.com/Jechli/Houdini/blob/main/scales_ip_test/scales_ip.png)
+
 After fixing:
 ![Scales after fixing IPs.](https://github.com/Jechli/Houdini/blob/main/scales_ip_test/scales_after_fix.png)
