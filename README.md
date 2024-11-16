@@ -6,21 +6,21 @@ This is a solution for post-fixes on scales and feather IPs based on a simple ma
 
 The next step for this tool is to find a method for resolving intersections between scales when there are a bunch of them on the surface of a snake body. However, on a larger set of scales it requires more consideration for more axes of rotation due to all the different angles of intersections that the scales can have. I had previously implemented a solution that worked relatively well, but not perfect as I couldn't get the loops working with just the Houdini nodes and VEX. I think it will require iterations over the scales with Python instead.
 
-###Scales intersecting each other (before) and scales with IP fixes (after):
+### Scales intersecting each other (before) and scales with IP fixes (after):
 
 ![Gif of scales IPs before and after fix solution.](https://github.com/Jechli/Houdini/blob/main/scales_ip_test/scales_ip_before_after.gif)
 
-###Main portion of SOP network for running the calculations: 
+### Main portion of SOP network for running the calculations: 
 
-![Main portion of the node network for fixing intersections.](https://github.com/Jechli/Houdini/blob/main/scales_ip_test/main_network.png) 
+<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/main_network.png" alt="Main portion of the node network for fixing intersections." width="300">
 
-###Fetching the next scale (primitive wrangle node inside foreach loop):
+### Fetching the next scale (primitive wrangle node inside foreach loop):
 
-![Fetching the next scale with a primitive wrangle node.](https://github.com/Jechli/Houdini/blob/main/scales_ip_test/primwrangle_next_scale.png) 
+<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/primwrangle_next_scale.png" alt="Fetching the next scale with a primitive wrangle node." width="300">
 
-###Calculations for the angle of rotation of each scale (attribute wrangle node inside foreach loop):
+### Calculations for the angle of rotation of each scale (attribute wrangle node inside foreach loop):
 
-![Angle of rotation calculations within attribute wrangle node.](https://github.com/Jechli/Houdini/blob/main/scales_ip_test/attribwrangle_intersect_hit.png) 
+<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/attribwrangle_intersect_hit.png" alt="Angle of rotation calculations within attribute wrangle node." width="300">
 
 **Full VEX script:**
 
