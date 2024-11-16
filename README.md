@@ -12,15 +12,15 @@ The next step for this tool is to find a method for resolving intersections betw
 
 ### Main portion of SOP network for running the calculations: 
 
-<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/main_network.png" alt="Main portion of the node network for fixing intersections." width="300">
+<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/main_network.png" alt="Main portion of the node network for fixing intersections." width="300" style="text-align: center;">
 
 ### Fetching the next scale (primitive wrangle node inside foreach loop):
 
-<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/primwrangle_next_scale.png" alt="Fetching the next scale with a primitive wrangle node." width="300">
+<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/primwrangle_next_scale.png" alt="Fetching the next scale with a primitive wrangle node." width="300" style="text-align: center;">
 
 ### Calculations for the angle of rotation of each scale (attribute wrangle node inside foreach loop):
 
-<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/attribwrangle_intersect_hit.png" alt="Angle of rotation calculations within attribute wrangle node." width="300">
+<img src="https://github.com/Jechli/Houdini/blob/main/scales_ip_test/attribwrangle_intersect_hit.png" alt="Angle of rotation calculations within attribute wrangle node." width="300" style="text-align: center;">
 
 **Full VEX script:**
 
